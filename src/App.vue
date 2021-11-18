@@ -33,7 +33,7 @@ export default {
 .room {
   display: grid;
   grid-template-columns: 1fr 320px;
-  border: 1px solid #ccd8e4;
+  border: 1px solid gainsboro;
   max-width: 1000px;
   height: 100%;
   background: white;

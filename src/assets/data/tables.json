@@ -24,35 +24,35 @@
         "_id": 3,
         "x": 120,
         "y": 240,
-        "group_id": 1,
+        "group_id": 2,
         "rotate": 270
     },
     {
         "_id": 4,
         "x": 50,
         "y": 140,
-        "group_id": 1,
+        "group_id": 2,
         "rotate": 0
     },
     {
         "_id": 5,
         "x": 140,
         "y": 272,
-        "group_id": 1,
+        "group_id": 0,
         "rotate": 90
     },
     {
         "_id": 6,
-        "x": 285,
-        "y": 250,
-        "group_id": 1,
+        "x": 240,
+        "y": 272,
+        "group_id": 0,
         "rotate": 90
     },
     {
         "_id": 7,
-        "x": 385,
-        "y": 55,
-        "group_id": 1,
+        "x": 340,
+        "y": 272,
+        "group_id": 0,
         "rotate": 90
     },
     {
@@ -61,5 +61,33 @@
         "y": 407,
         "group_id": 1,
         "rotate": 270
+    },
+    {
+        "_id": 9,
+        "x": 175,
+        "y": 407,
+        "group_id": 1,
+        "rotate": 270
+    },
+    {
+        "_id": 10,
+        "x": 275,
+        "y": 407,
+        "group_id": 1,
+        "rotate": 270
+    },
+    {
+        "_id": 10,
+        "x": 375,
+        "y": 407,
+        "group_id": 3,
+        "rotate": 270
+    },
+    {
+        "_id": 11,
+        "x": 440,
+        "y": 272,
+        "group_id": 3,
+        "rotate": 90
     }
 ]

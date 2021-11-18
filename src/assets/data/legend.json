@@ -1,26 +1,26 @@
 [
   {
     "group_id": 0,
-    "color": "blueviolet",
-    "text": "Front-end",
-    "counter": 4
+    "color": "LightSeaGreen",
+    "label": "Front-end",
+    "counter": 3
   },
   {
     "group_id": 1,
-    "color": "light-teal",
-    "text": "Подразделение 2",
-    "counter": 4
+    "color": "teal",
+    "label": "Back-end",
+    "counter": 6
   },
   {
     "group_id": 2,
-    "color": "violet",
-    "text": "Подразделение 3",
-    "counter": 4
+    "color": "YellowGreen",
+    "label": "Management",
+    "counter": 2
   },
   {
     "group_id": 3,
-    "color": "deeppink",
-    "text": "Подразделение 4",
-    "counter": 1
+    "color": "Honeydew",
+    "label": "Vacant place",
+    "counter": 2
   }
 ]

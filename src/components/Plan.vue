@@ -1,6 +1,6 @@
 <template>
-  <div class="plan">
-    <PlanSVG ref="svg" />
+  <div v-if="!isLoading" class="plan">
+    <PlanSVG ref="svg" @click="onClickPlan" />
     <TableSVG
       v-show="false"
       ref="table"
@@ -23,8 +23,8 @@ export default {
   data() {
     return {
       isLoading: false,
-      svg: null,
-      g: null,
+      planSVG: null,
+      planSVGgroup: null,
       tableSVG: null,
       tables: [],
     };
@@ -35,48 +35,49 @@ export default {
   mounted() {
     this.isLoading = true;
 
-    this.svg = d3.select(this.$refs.svg);
-    this.g = this.svg.select("g");
+    this.planSVG = d3.select(this.$refs.svg);
+    this.planSVGgroup = this.planSVG.select("g");
     this.tableSVG = d3.select(this.$refs.table);
-    if (this.g) {
+    if (this.planSVGgroup) {
       this.drawTables();
     } else {
-      alert("SVG is incorrect");
+      console.error("SVG is incorrect");
     }
     
     this.isLoading = false;
   },
   methods: {
     drawTables() {
-      console.log('---drawTables');
-     // создаем группу для рабочих мест
-
-      const svgTablesGroupPlace = this.g
+      const svgTablesGroupPlace = this.planSVGgroup
         .append("g")
         .classed("groupPlaces", true); 
 
       this.tables.map((table) => {
-        // создает группу для рабочего стола
         const targetSeat = svgTablesGroupPlace
           .append("g")
           .attr("transform", `translate(${table.x}, ${table.y}) scale(0.3)`)
           .attr("id", table._id)
           .classed("employer-place", true);
 
-        // устанавливает стол в группу
         targetSeat
           .append("g")
           .attr("transform", `rotate(${table.rotate || 0})`)
           .attr("group_id", table.group_id)
           .classed("table", true)
           .html(this.tableSVG.html())
-          .attr( // устанавливаем цвет подразделения
+          .attr(
             "fill",
             legend.find((it) => it.group_id === table.group_id) 
                 ?.color ?? "transparent"
-    );  
+          );
+      });
+    },
+  onClickPlan(event) {
+      const table = event.target.closest(".employer-place");
 
-      });  
+      if (table) {
+        console.log('place id', table.id);
+      }
     },
   }
 
@@ -88,5 +89,4 @@ export default {
   display: flex;
   justify-content: center;
 }
-
 </style>

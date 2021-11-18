@@ -1,24 +1,13 @@
-# room-plan
+# Room-plan
 
-## Project setup
-```
-yarn install
-```
+Карта рабочих мест в офисе  
+Проект на Vue с библиотекой D3.js и vue-chartjs  
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+![Screenshot](/src/assets/images/readme/screenshot.png)
 
-### Compiles and minifies for production
-```
-yarn build
-```
+Пакетный менеджер yarn  
+yarn install  
+yarn serve  
 
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Проект вдохновлен домашним заданием на курсе frontend-разработки от Ozon Route 256  
+https://route256.ozon.ru/frontend
