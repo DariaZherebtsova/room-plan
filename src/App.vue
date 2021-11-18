@@ -34,7 +34,7 @@ export default {
   display: grid;
   grid-template-columns: 1fr 320px;
   border: 1px solid #ccd8e4;
-  max-width: 1500px;
+  max-width: 1000px;
   height: 100%;
   background: white;
   margin: 0 auto;
