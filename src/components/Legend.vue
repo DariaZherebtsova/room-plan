@@ -63,7 +63,7 @@ export default {
 
 <style scoped>
 .legend {
-  border-left: 1px solid gainsboro;
+  border-left: 1px solid var(--light-grey);
   padding: 30px 20px;
 }
 .legend-item {
@@ -74,12 +74,12 @@ export default {
 .legend-item__marker {
   width: 15px;
   height: 15px;
-  border: 1px solid gainsboro;
+  border: 1px solid var(--light-grey);
   border-radius: 4px;
   background-color: var(--marker-color);
 }
 .legend-item__counter {
-  color: grey;
+  color: var(--grey);
 }
 .legend__chart {
   margin-top: 50px;

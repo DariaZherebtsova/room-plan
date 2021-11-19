@@ -9,5 +9,5 @@
 yarn install  
 yarn serve  
 
-Проект вдохновлен домашним заданием на курсе frontend-разработки от Ozon Route 256  
+Проект вдохновлен домашним заданием на курсе frontend-разработки Route 256 от Ozon 
 https://route256.ozon.ru/frontend

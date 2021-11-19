@@ -84,7 +84,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .plan {
   display: flex;
   justify-content: center;
