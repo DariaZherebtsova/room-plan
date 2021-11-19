@@ -1,0 +1,26 @@
+[
+  {
+    "group_id": 0,
+    "color": "LightSeaGreen",
+    "label": "Front-end",
+    "counter": 3
+  },
+  {
+    "group_id": 1,
+    "color": "teal",
+    "label": "Back-end",
+    "counter": 6
+  },
+  {
+    "group_id": 2,
+    "color": "YellowGreen",
+    "label": "Management",
+    "counter": 2
+  },
+  {
+    "group_id": 3,
+    "color": "Honeydew",
+    "label": "Vacant place",
+    "counter": 2
+  }
+]

@@ -22,21 +22,17 @@ export default {
 </script>
 
 <style>
-* {
-  box-sizing: border-box;
-}
-
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
 }
 
 .room {
   display: grid;
   grid-template-columns: 1fr 320px;
-  border: 1px solid #ccd8e4;
-  max-width: 1500px;
+  border: 1px solid var(--light-grey);
+  max-width: 1000px;
   height: 100%;
-  background: white;
   margin: 0 auto;
 }
 </style>
