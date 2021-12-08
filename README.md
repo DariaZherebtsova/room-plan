@@ -5,6 +5,8 @@
 
 ![Screenshot](/src/assets/images/readme/screenshot.png)
 
+https://dariazherebtsova.github.io/room-plan/
+
 Пакетный менеджер yarn  
 yarn install  
 yarn serve  
